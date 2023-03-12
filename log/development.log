@@ -1,0 +1,515 @@
+Started GET "/" for 127.0.0.1 at 2023-03-05 13:05:07 +0900
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20210315144501_devise_create_users.rb
+20210315151606_create_time_trackings.rb
+20210316030643_acts_as_follower_migration.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-03-05 13:05:08 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20210315144501_devise_create_users.rb
+20210315151606_create_time_trackings.rb
+20210316030643_acts_as_follower_migration.rb
+
+
+):
+  
+activerecord (6.1.7.2) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.2) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.2) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.2) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.2) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-03-05 13:05:11 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20210315144501)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "name" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "authentication_token" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_authentication_token" ON "users" ("authentication_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210315144501"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTimeTrackings (20210315151606)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "time_trackings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "start_at" datetime NOT NULL, "end_at" datetime, "length_of_sleep" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_43f59b18bc"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_time_trackings_on_user_id" ON "time_trackings" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210315151606"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to ActsAsFollowerMigration (20210316030643)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "follows"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "follows" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "followable_type" varchar NOT NULL, "followable_id" integer NOT NULL, "follower_type" varchar NOT NULL, "follower_id" integer NOT NULL, "blocked" boolean DEFAULT 0 NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_follows_on_followable" ON "follows" ("followable_type", "followable_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_follows_on_follower" ON "follows" ("follower_type", "follower_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "fk_follows" ON "follows" ("follower_id", "follower_type")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "fk_followables" ON "follows" ("followable_id", "followable_type")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210316030643"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-05 04:05:11.380007"], ["updated_at", "2023-03-05 04:05:11.380007"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-03-05 13:05:11 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 1572)
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6410)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-03-05 13:05:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-05 13:05:21 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 181)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 842)
+
+
+Started GET "/api/v1/time_trackings/me/my_records" for 127.0.0.1 at 2023-03-05 13:05:46 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/time_trackings" for 127.0.0.1 at 2023-03-05 13:08:48 +0900
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/time_trackings/me/my_clocked_in_records" for 127.0.0.1 at 2023-03-05 13:20:02 +0900
+Started POST "/api/v1/time_trackings" for 127.0.0.1 at 2023-03-05 13:20:30 +0900
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 13:28:06 +0900
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 13:28:12 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "bien"], ["email", "bien@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bien@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/v1/time_trackings?id=123" for 127.0.0.1 at 2023-03-05 13:58:08 +0900
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "User 0"], ["email", "user0@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user0@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user0@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user0@email.com"], ["name", "User 0"], ["encrypted_password", "$2a$12$m2lv.WiLYV1bqLjkoti.hOnJUi3ITQ3hgJqEFfkqNyzVMJ2kjMD9a"], ["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["created_at", "2023-03-05 05:16:16.430175"], ["updated_at", "2023-03-05 05:16:16.430175"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "User 1"], ["email", "user1@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user1@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user1@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "Gz6hZdiHYXzt4D97w3KY"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user1@email.com"], ["name", "User 1"], ["encrypted_password", "$2a$12$wqK/YqU.qzcuhxJWhBKrluAqJ1UNug7/1/dvsa9/9WqE4mw06y1MO"], ["authentication_token", "Gz6hZdiHYXzt4D97w3KY"], ["created_at", "2023-03-05 05:16:16.634029"], ["updated_at", "2023-03-05 05:16:16.634029"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "User 2"], ["email", "user2@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user2@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user2@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "MDzyDfUtx5Afsoa2_xzX"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user2@email.com"], ["name", "User 2"], ["encrypted_password", "$2a$12$fePDVRb3QrRtgz9WMdKa.ekyjHwzyv/BA9rZFiqU4Lnye1XsdDLNK"], ["authentication_token", "MDzyDfUtx5Afsoa2_xzX"], ["created_at", "2023-03-05 05:16:16.825096"], ["updated_at", "2023-03-05 05:16:16.825096"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "User 3"], ["email", "user3@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user3@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user3@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "11QgUgSarG1suPF_B7Qi"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user3@email.com"], ["name", "User 3"], ["encrypted_password", "$2a$12$nvOExAqY6KMjeJE1OZ3B0elRThpcrK6w2IJY5AdTtJwlRUVvwIoOC"], ["authentication_token", "11QgUgSarG1suPF_B7Qi"], ["created_at", "2023-03-05 05:16:17.022562"], ["updated_at", "2023-03-05 05:16:17.022562"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "User 4"], ["email", "user4@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user4@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user4@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "PayD5UJgYsabTLhzxkS4"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user4@email.com"], ["name", "User 4"], ["encrypted_password", "$2a$12$NoDQYIpnIvmWpS21dV/l4OdwCwEhIIhktBiK6eyYBIlZ/TCBZYuam"], ["authentication_token", "PayD5UJgYsabTLhzxkS4"], ["created_at", "2023-03-05 05:16:17.223314"], ["updated_at", "2023-03-05 05:16:17.223314"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/v1/time_trackings/me/my_records" for 127.0.0.1 at 2023-03-05 14:17:42 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/time_trackings/me/my_records" for 127.0.0.1 at 2023-03-05 14:17:47 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:41:in `block (3 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/my_clocked_in_records" for 127.0.0.1 at 2023-03-05 14:18:16 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:47:in `block (3 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 14:18:41 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mFollow Load (0.3ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."blocked" = ?[0m  [["follower_id", 1], ["follower_type", "User"], ["blocked", 0]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 14:23:57 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mFollow Load (0.1ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."blocked" = ?[0m  [["follower_id", 1], ["follower_type", "User"], ["blocked", 0]]
+  ↳ app/models/user.rb:37:in `friend_records'
+Started POST "/api/v1/time_trackings?id=1" for 127.0.0.1 at 2023-03-05 14:25:20 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL AND "time_trackings"."id" = ? ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:19:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:21:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Create (0.5ms)[0m  [1m[32mINSERT INTO "time_trackings" ("user_id", "start_at", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["start_at", "2023-03-05 05:25:20.532627"], ["created_at", "2023-03-05 05:25:20.548173"], ["updated_at", "2023-03-05 05:25:20.548173"]]
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+Started POST "/api/v1/time_trackings" for 127.0.0.1 at 2023-03-05 14:25:29 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:21:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Update (0.4ms)[0m  [1m[33mUPDATE "time_trackings" SET "end_at" = ?, "length_of_sleep" = ?, "updated_at" = ? WHERE "time_trackings"."id" = ?[0m  [["end_at", "2023-03-05 05:25:29.967597"], ["length_of_sleep", 9], ["updated_at", "2023-03-05 05:25:29.968209"], ["id", 1]]
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/my_records" for 127.0.0.1 at 2023-03-05 14:26:00 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:41:in `block (3 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/my_clocked_in_records" for 127.0.0.1 at 2023-03-05 14:27:01 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:47:in `block (3 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings" for 127.0.0.1 at 2023-03-05 14:27:42 +0900
+Started POST "/api/v1/time_trackings" for 127.0.0.1 at 2023-03-05 14:27:51 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:21:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Create (0.5ms)[0m  [1m[32mINSERT INTO "time_trackings" ("user_id", "start_at", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["start_at", "2023-03-05 05:27:51.398487"], ["created_at", "2023-03-05 05:27:51.399216"], ["updated_at", "2023-03-05 05:27:51.399216"]]
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/api/v1/time_tracking.rb:29:in `block (2 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/my_clocked_in_records" for 127.0.0.1 at 2023-03-05 14:28:13 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:47:in `block (3 levels) in <class:TimeTracking>'
+Started GET "/api/v1/friends/follow/3" for 127.0.0.1 at 2023-03-05 14:29:18 +0900
+Started POST "/api/v1/friends/follow/3" for 127.0.0.1 at 2023-03-05 14:29:23 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/api/v1/friend.rb:14:in `block (2 levels) in <class:Friend>'
+DEPRECATION WARNING: Setting custom parent classes is deprecated and will be removed in future versions. (called from parent_class_name at /Users/bien/.rvm/gems/ruby-3.0.0/bundler/gems/acts_as_follower-c5ac7b9601c4/lib/acts_as_follower/follower_lib.rb:10)
+DEPRECATION WARNING: Setting custom parent classes is deprecated and will be removed in future versions. (called from parent_class_name at /Users/bien/.rvm/gems/ruby-3.0.0/bundler/gems/acts_as_follower-c5ac7b9601c4/lib/acts_as_follower/follower_lib.rb:10)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "follows" WHERE "follows"."blocked" = ? AND "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."followable_id" = ? AND "follows"."followable_type" = ?[0m  [["blocked", 0], ["follower_id", 1], ["follower_type", "User"], ["followable_id", 3], ["followable_type", "User"]]
+  ↳ app/api/v1/friend.rb:15:in `block (2 levels) in <class:Friend>'
+DEPRECATION WARNING: Setting custom parent classes is deprecated and will be removed in future versions. (called from parent_class_name at /Users/bien/.rvm/gems/ruby-3.0.0/bundler/gems/acts_as_follower-c5ac7b9601c4/lib/acts_as_follower/follower_lib.rb:10)
+  [1m[36mFollow Load (0.2ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."followable_id" = ? AND "follows"."followable_type" = ? ORDER BY "follows"."id" ASC LIMIT ?[0m  [["follower_id", 1], ["follower_type", "User"], ["followable_id", 3], ["followable_type", "User"], ["LIMIT", 1]]
+  ↳ app/api/v1/friend.rb:18:in `block (2 levels) in <class:Friend>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/api/v1/friend.rb:18:in `block (2 levels) in <class:Friend>'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/api/v1/friend.rb:18:in `block (2 levels) in <class:Friend>'
+  [1m[36mFollow Create (0.5ms)[0m  [1m[32mINSERT INTO "follows" ("followable_type", "followable_id", "follower_type", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["followable_type", "User"], ["followable_id", 3], ["follower_type", "User"], ["follower_id", 1], ["created_at", "2023-03-05 05:29:23.433596"], ["updated_at", "2023-03-05 05:29:23.433596"]]
+  ↳ app/api/v1/friend.rb:18:in `block (2 levels) in <class:Friend>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/api/v1/friend.rb:18:in `block (2 levels) in <class:Friend>'
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 14:29:51 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mFollow Load (0.1ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."blocked" = ?[0m  [["follower_id", 1], ["follower_type", "User"], ["blocked", 0]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND (created_at < '2023-02-27 00:00:00') AND "time_trackings"."length_of_sleep" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC, "time_trackings"."length_of_sleep" ASC[0m  [["user_id", 3]]
+  ↳ app/models/user.rb:39:in `group_by'
+Started GET "/api/v1/time_trackings?id=3" for 127.0.0.1 at 2023-03-05 14:30:25 +0900
+Started POST "/api/v1/time_trackings?id=3" for 127.0.0.1 at 2023-03-05 14:30:29 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL AND "time_trackings"."id" = ? ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["id", 3], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:19:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND "time_trackings"."end_at" IS NULL AND "time_trackings"."start_at" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/api/v1/time_tracking.rb:21:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTimeTracking Update (0.4ms)[0m  [1m[33mUPDATE "time_trackings" SET "end_at" = ?, "length_of_sleep" = ?, "updated_at" = ? WHERE "time_trackings"."id" = ?[0m  [["end_at", "2023-03-05 05:30:29.525892"], ["length_of_sleep", 158], ["updated_at", "2023-03-05 05:30:29.526270"], ["id", 2]]
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/api/v1/time_tracking.rb:26:in `block (2 levels) in <class:TimeTracking>'
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 14:30:42 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mFollow Load (0.1ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."blocked" = ?[0m  [["follower_id", 1], ["follower_type", "User"], ["blocked", 0]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND (created_at < '2023-02-27 00:00:00') AND "time_trackings"."length_of_sleep" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC, "time_trackings"."length_of_sleep" ASC[0m  [["user_id", 3]]
+  ↳ app/models/user.rb:39:in `group_by'
+Started GET "/api/v1/friends/follow/3" for 127.0.0.1 at 2023-03-05 14:30:56 +0900
+Started POST "/api/v1/friends/follow/3" for 127.0.0.1 at 2023-03-05 14:31:01 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/api/v1/friend.rb:14:in `block (2 levels) in <class:Friend>'
+DEPRECATION WARNING: Setting custom parent classes is deprecated and will be removed in future versions. (called from parent_class_name at /Users/bien/.rvm/gems/ruby-3.0.0/bundler/gems/acts_as_follower-c5ac7b9601c4/lib/acts_as_follower/follower_lib.rb:10)
+DEPRECATION WARNING: Setting custom parent classes is deprecated and will be removed in future versions. (called from parent_class_name at /Users/bien/.rvm/gems/ruby-3.0.0/bundler/gems/acts_as_follower-c5ac7b9601c4/lib/acts_as_follower/follower_lib.rb:10)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "follows" WHERE "follows"."blocked" = ? AND "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."followable_id" = ? AND "follows"."followable_type" = ?[0m  [["blocked", 0], ["follower_id", 1], ["follower_type", "User"], ["followable_id", 3], ["followable_type", "User"]]
+  ↳ app/api/v1/friend.rb:15:in `block (2 levels) in <class:Friend>'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/v1/time_trackings/me/friend_records" for 127.0.0.1 at 2023-03-05 14:42:33 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mFollow Load (0.2ms)[0m  [1m[34mSELECT "follows".* FROM "follows" WHERE "follows"."follower_id" = ? AND "follows"."follower_type" = ? AND "follows"."blocked" = ?[0m  [["follower_id", 1], ["follower_type", "User"], ["blocked", 0]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/models/user.rb:37:in `friend_records'
+  [1m[36mTimeTracking Load (0.1ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? AND (created_at < '2023-02-27 00:00:00') AND "time_trackings"."length_of_sleep" IS NOT NULL ORDER BY "time_trackings"."created_at" ASC, "time_trackings"."length_of_sleep" ASC[0m  [["user_id", 3]]
+  ↳ app/models/user.rb:39:in `group_by'
+Started GET "/api/v1/time_trackings/me/my_records" for 127.0.0.1 at 2023-03-05 14:43:18 +0900
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "ZQSXgxik1pFzZpNFZzsx"], ["LIMIT", 1]]
+  ↳ app/models/concerns/authentication.rb:6:in `authorize'
+  [1m[36mTimeTracking Load (0.2ms)[0m  [1m[34mSELECT "time_trackings".* FROM "time_trackings" WHERE "time_trackings"."user_id" = ? ORDER BY "time_trackings"."created_at" ASC[0m  [["user_id", 1]]
+  ↳ app/api/v1/time_tracking.rb:41:in `block (3 levels) in <class:TimeTracking>'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2023-03-05 14:54:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bien/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.3ms | Allocations: 359)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2873)
+
+
+Started GET "/api/v1/time_trackings/me/my_clocked_in_records" for 127.0.0.1 at 2023-03-05 14:55:08 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "Test_User_0"], ["email", "test_user0@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user0@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user0@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "uCf7ZnsxAnhz4kqEhey8"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test_user0@email.com"], ["name", "Test_User_0"], ["encrypted_password", "$2a$12$/6UAOxOdIuW0Xy2eTHRFWO8Ii6SCXqxaH9bcsbFtKONZUNZUqzDr6"], ["authentication_token", "uCf7ZnsxAnhz4kqEhey8"], ["created_at", "2023-03-05 06:46:45.229670"], ["updated_at", "2023-03-05 06:46:45.229670"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "Test_User_1"], ["email", "test_user1@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user1@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user1@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "tLH3_pm1xKcvvYgkk1gi"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test_user1@email.com"], ["name", "Test_User_1"], ["encrypted_password", "$2a$12$HxoBb2MKbx0qAq1mvHsZDuY6.4DGQqEhgrfNknpmQanirvm8FcCvy"], ["authentication_token", "tLH3_pm1xKcvvYgkk1gi"], ["created_at", "2023-03-05 06:46:45.423590"], ["updated_at", "2023-03-05 06:46:45.423590"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "Test_User_2"], ["email", "test_user2@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user2@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user2@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "3dPssU2VrA9c33CfYxD5"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test_user2@email.com"], ["name", "Test_User_2"], ["encrypted_password", "$2a$12$W2Qoou05RvPoU0GcNyRXwu5wZpAoiZ5v6cKOlqK4uK18YsixrRH/O"], ["authentication_token", "3dPssU2VrA9c33CfYxD5"], ["created_at", "2023-03-05 06:46:45.620875"], ["updated_at", "2023-03-05 06:46:45.620875"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "Test_User_3"], ["email", "test_user3@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user3@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user3@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "nTno-Xe9uz-Bybds7dcz"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test_user3@email.com"], ["name", "Test_User_3"], ["encrypted_password", "$2a$12$VYfEgCSpcqIAlQgl8mpjd.GGwu5aukZ5qp2FsUHyHq1lrhCg4Uqh6"], ["authentication_token", "nTno-Xe9uz-Bybds7dcz"], ["created_at", "2023-03-05 06:46:45.815222"], ["updated_at", "2023-03-05 06:46:45.815222"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT ?[0m  [["name", "Test_User_4"], ["email", "test_user4@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user4@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test_user4@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."authentication_token" = ? LIMIT ?[0m  [["authentication_token", "iMa_cmc46px9HYNgds8g"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:51:in `block in generate_authentication_token'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "encrypted_password", "authentication_token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test_user4@email.com"], ["name", "Test_User_4"], ["encrypted_password", "$2a$12$ymSozwMOMAiuNW8ae7cP3O/Te9DZ/DyasNOH1gvEaMYnJdQWsMbMO"], ["authentication_token", "iMa_cmc46px9HYNgds8g"], ["created_at", "2023-03-05 06:46:46.004938"], ["updated_at", "2023-03-05 06:46:46.004938"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
