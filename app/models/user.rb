@@ -20,8 +20,34 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 class User < ApplicationRecord
+  include Authentication
+
+  acts_as_follower
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  has_many :time_trackings
+
+
+  before_save :ensure_authentication_token
+
+  def friend_records
+    friend_ids = all_following.pluck(:id)
+    TimeTracking.where(user_id: friend_ids).pastweek.completed.order_by_length_of_sleep
+  end
+
+  protected
+
+  def ensure_authentication_token
+    self.authentication_token ||= generate_authentication_token
+  end
+
+  def generate_authentication_token
+    loop do
+      token = Devise.friendly_token
+      break token unless self.class.exists? authentication_token: token
+    end
+  end
 end
